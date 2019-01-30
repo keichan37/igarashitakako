@@ -22,7 +22,7 @@
             <img class="grid-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg" />
           <?php endif; ?>
 
-          <h5 class="grid-title"><?php the_title(); ?></h5>
+          <h5 class="grid-title underline-left"><?php the_title(); ?></h5>
           <ul class="grid-category">
             <?php foreach((get_the_category()) as $cat){
             echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';

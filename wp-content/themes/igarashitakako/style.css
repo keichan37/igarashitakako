@@ -27,6 +27,7 @@ Version: 0.1
   clear: both;
   visibility: hidden;
 }
+
 article,
 aside,
 details,
@@ -195,11 +196,9 @@ a.grid {
   transition: 0.3s;
 }
 
-.grid-eyecatch-wrap {
-}
 
 .grid-eyecatch {
-  margin-bottom: 14px;
+  padding-bottom: 14px;
   width: 100%;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -218,15 +217,21 @@ ul.grid-category {
 }
 
 .grid-title {
+  position: relative;
   margin: 0 0 0 0;
   padding: 0;
   font-weight: 400;
   font-size: 11px;
 }
 
+.grid-title:hover {
+  text-decoration: underline;
+}
+
 ul.grid-category {
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 
 ul.grid-category li {
