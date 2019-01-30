@@ -131,7 +131,7 @@ textarea {
 }
 body,
 html {
-  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family: 'FOT-筑紫ゴシック Pr5 M', 'TsukuGoPr5-M', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
   color: #231815;
   -webkit-font-smoothing: antialiased;
   margin: 0;
@@ -158,6 +158,7 @@ header {
   font-size: 13px;
   margin: 0 0 8px 0;
   padding: 0;
+  font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', sans-serif;
 }
 
 .global_menu ul {
@@ -171,6 +172,7 @@ header {
   text-transform: uppercase;
   font-size: 11px;
   margin-right: 38px;
+  font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', sans-serif;
 }
 
 .global_menu ul li a {
@@ -255,6 +257,7 @@ ul.grid-category li {
 }
 
 #footer {
+  font-family: 'FOT-筑紫ゴシック Pr5 L', 'TsukuGoPr5-L', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', sans-serif;
   text-align: center;
   padding: 10px 10px 0 10px;
   font-size: 13px;
