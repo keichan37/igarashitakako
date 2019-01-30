@@ -177,6 +177,18 @@ header {
   text-decoration: none;
 }
 
+.global_menu ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  transition: width 0.3s;
+  border-bottom: 1px solid #000000;
+}
+
+.global_menu ul li a:hover::after {
+  width: 100%;
+}
+
 .container {
   height: 100%;
   width: 1100px;
