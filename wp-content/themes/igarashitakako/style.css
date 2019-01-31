@@ -324,3 +324,21 @@ ul.grid-category li {
     font-size: 9px;
   }
 }
+
+@media (prefers-color-scheme: light) {
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  a {
+    color: #ffffff;
+  }
+  header {
+    background: none;
+  }
+  header svg {
+    fill: #ffffff;
+  }
+}
