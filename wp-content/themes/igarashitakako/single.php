@@ -9,11 +9,13 @@
               <?php while(have_posts()): the_post(); ?>
                 <article>
                   <h1 class="single-title"><?php the_title(); ?></h1>
-                  <ul>
-                    <?php $cat = get_the_category(); ?>
-                    <?php $cat = $cat[0]; ?>
-                    <?php echo get_cat_name($cat->term_id); ?>
+
+                  <ul class="grid-category">
+                    <?php foreach((get_the_category()) as $cat){
+                    echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
+                    } ?>
                   </ul>
+                  <ul>
 
                   <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
 
