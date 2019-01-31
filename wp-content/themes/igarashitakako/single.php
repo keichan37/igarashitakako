@@ -8,13 +8,12 @@
             <div class="single-left">
               <?php while(have_posts()): the_post(); ?>
                 <article>
-                  <?php
-                    $category = get_the_category();
-                    $cat_id   = $category[0]->cat_ID;
-                    $cat_name = $category[0]->cat_name;
-                    $cat_slug = $category[0]->category_nicename;
-                  ?>
                   <h1 class="single-title"><?php the_title(); ?></h1>
+                  <ul>
+                    <?php $cat = get_the_category(); ?>
+                    <?php $cat = $cat[0]; ?>
+                    <?php echo get_cat_name($cat->term_id); ?>
+                  </ul>
 
                   <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
 
