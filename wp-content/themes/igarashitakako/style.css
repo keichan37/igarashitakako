@@ -263,6 +263,16 @@ ul.grid-category li {
   margin: 0 0 0 5px;
 }
 
+.prev-link {
+  float: left;
+  clear: left;
+}
+
+.next-link {
+  float: right;
+  clear: right;
+}
+
 #footer {
   font-family: 'FOT-筑紫ゴシック Pr5 L', 'TsukuGoPr5-L', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', sans-serif;
   max-width: 1128px;
