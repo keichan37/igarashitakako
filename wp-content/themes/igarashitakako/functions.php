@@ -1,8 +1,8 @@
 
 <?php
 
-/* アイキャッチ */
 add_theme_support( 'post-thumbnails' );
+add_theme_support('menus');
 
 add_filter( 'previous_post_link', 'add_prev_post_link_class' );
 function add_prev_post_link_class($output) {
