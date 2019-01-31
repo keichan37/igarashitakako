@@ -39,11 +39,11 @@
                 </article>
               <?php endwhile; ?>
             </div>
-            <?php if (get_next_post()):?>
-              <?php next_post_link('%link','<i class="icon icon-leftArrow"></i> %title',TRUE); ?>
-            <?php endif; ?>
             <?php if (get_previous_post()):?>
-              <?php previous_post_link('%link','%title <i class="icon icon-rightArrow"></i>',TRUE); ?>
+              <?php previous_post_link('%link','%title <i class="icon icon-leftArrow"></i>',TRUE); ?>
+            <?php endif; ?>
+            <?php if (get_next_post()):?>
+              <?php next_post_link('%link','<i class="icon icon-RIghtArrow"></i> %title',TRUE); ?>
             <?php endif; ?>
           </div>
         </div>    
