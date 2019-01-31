@@ -24,8 +24,11 @@
 
           <h5 class="grid-title"><?php the_title(); ?></h5>
           <ul class="grid-category">
-            <?php foreach((get_the_category()) as $cat){
-            echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
+            <?php
+              $cats = get_the_category();
+              $exclude = 2;
+              foreach((array)$cats as $cat){
+                echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
             } ?>
           </ul>
         </a>
