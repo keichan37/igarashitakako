@@ -25,7 +25,7 @@
 // を使用し、必ず UTF-8 の BOM なし (UTF-8N) で保存してください。
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
-$db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
+$db = parse_url($_SERVER['JAWSDB_URL']);
 
 /** WordPress のためのデータベース名 */
 define('DB_NAME', trim($db["path"],"/"));
