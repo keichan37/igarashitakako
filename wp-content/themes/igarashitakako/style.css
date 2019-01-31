@@ -298,7 +298,7 @@ ul.grid-category li {
   }
   a.grid {
     width: 46%;
-    margin: 1% 2%;
+    margin: 3% 2%;
   }
 }
 @media(max-width: 480px) {
