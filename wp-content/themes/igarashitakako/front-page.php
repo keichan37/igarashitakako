@@ -26,9 +26,11 @@
           <ul class="grid-category">
             <?php
               $cats = get_the_category();
-              $exclude = 2;
+              $exclude = '2';
               foreach((array)$cats as $cat){
-                echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
+                if(!in_array($cat->cat_ID, $exclude)){
+                  echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
+                }
             } ?>
           </ul>
         </a>
