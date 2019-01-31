@@ -26,12 +26,10 @@
           <ul class="grid-category">
             <?php
               $cats = get_the_category();
-              $exclude = 2;
-              foreach((array)$cats as $cat){
-                if(!in_array($cat->cat_ID, $exclude)){
-                  echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
-                }
-            } ?>
+              foreach($cats as $cat):
+              if($cat->parent) echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
+              endforeach;
+            ?>
           </ul>
         </a>
 
