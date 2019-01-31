@@ -11,11 +11,13 @@
                   <h1 class="single-title"><?php the_title(); ?></h1>
 
                   <ul class="grid-category">
-                    <?php foreach((get_the_category()) as $cat){
-                    echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
-                    } ?>
+                    <?php
+                      $cats = get_the_category();
+                      foreach($cats as $cat):
+                      if($cat->parent) echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
+                      endforeach;
+                    ?>
                   </ul>
-                  <ul>
 
                   <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
 
