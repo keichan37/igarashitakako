@@ -15,16 +15,6 @@
           </ul>
 
           <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
-
-            <?php
-              $thumbnail_id = get_post_thumbnail_id();
-              $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'large', true); //アイキャッチのURL取得
-            ?>
-            <?php if (has_post_thumbnail()): ?>
-              <img class="single-eyecatch" src="<?php echo $thumbnail_url[0]; ?>">
-            <?php else: ?>
-            <?php endif; ?>
-
             <div class="single-content mce-content-body">
           <?php endif; //パスワード保護 ?>
 
