@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div id="top">
+  <div id="front-page">
     <div class="container">
       <?php
         $args = array(
@@ -19,6 +19,4 @@
     </div>
     
   </div>
-  <div class="footer"> 
-    <?php get_footer(); ?>
-  </div>
+<?php get_footer(); ?>

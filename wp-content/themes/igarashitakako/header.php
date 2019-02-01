@@ -44,8 +44,7 @@
     <div id="wrap">
       <header>
         <a href="/" id="brand"><?php get_template_part('partials/brand'); ?></a>
-        <h1 id="title">五十嵐 貴子</h1>
+        <strong id="title">五十嵐 貴子</strong>
         <?php wp_nav_menu( array('menu' => 'global_menu', 'menu_class' => 'global_menu')); ?>
         <div class="clearfix"></div>
       </header>
-      <div id="blur">
