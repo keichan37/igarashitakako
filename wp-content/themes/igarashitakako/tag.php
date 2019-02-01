@@ -5,6 +5,7 @@
       <?php if(have_posts()): while(have_posts()):the_post(); ?>
         <?php get_template_part('partials/grid'); ?>
       <?php endwhile; endif; ?>
+        <div class="clearfix"></div>
       <?php if (function_exists("pagination")) {
         pagination($custom_query->max_num_pages);
       } ?>

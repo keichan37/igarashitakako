@@ -316,6 +316,15 @@ ul.grid-category li {
   clear: right;
 }
 
+/* category tag archive author */
+#category h1,
+#tag h1 {
+  font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 1em 0 0 0;
+}
+
 /* wpcf7 */
 .wpcf7 p {
   margin: 0;
