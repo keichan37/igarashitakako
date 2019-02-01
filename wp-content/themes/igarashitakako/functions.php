@@ -23,4 +23,3 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 <?php
 }
 ?>
-
