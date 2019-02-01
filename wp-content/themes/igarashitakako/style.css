@@ -306,6 +306,20 @@ ul.grid-category li {
 }
 
 /* single */
+
+.single-title {
+  margin: 0;
+  padding: 1em 0 0 0;
+}
+
+#single .grid-category {
+  text-align: left;
+}
+
+#single .grid-category li {
+  margin: 0 10px 0 0;
+}
+
 .prev-link {
   float: left;
   clear: left;
