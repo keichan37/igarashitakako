@@ -310,14 +310,13 @@ ul.grid-category li {
 .single-title {
   margin: 0;
   padding: 1em 0 0 0;
+  text-align: center;
 }
 
-#single .grid-category {
-  text-align: left;
-}
-
-#single .grid-category li {
-  margin: 0 10px 0 0;
+.prev-link:hover,
+.next-link:hover {
+  text-decoration: none;
+  margin-top: 15px;
 }
 
 .prev-link {
