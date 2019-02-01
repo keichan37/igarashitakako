@@ -334,6 +334,7 @@ ul.grid-category li {
 }
 
 .wpcf7-form-control-wrap {
+  width: 100%;
   position: relative;
   display: inline-block;
   margin: 0 0 15px 0;
@@ -382,6 +383,10 @@ ul.grid-category li {
   width: auto;
   font-size: 10px;
   line-height: 1.4;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
 
 input[type="submit"].wpcf7-form-control,
