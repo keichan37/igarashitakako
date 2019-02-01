@@ -44,5 +44,6 @@
       <?php next_post_link('%link','%title <i class="icon icon-rightArrow"></i> ',TRUE); ?>
     <?php endif; ?>
   </div>    
+</div>    
     
 <?php get_footer(); ?>
