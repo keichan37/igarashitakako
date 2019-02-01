@@ -311,6 +311,10 @@ ul.grid-category li {
 
 /* single */
 
+#single .container {
+  max-width: 900px;
+}
+
 .single-title {
   margin: 0;
   padding: 1em 0 0 0;
