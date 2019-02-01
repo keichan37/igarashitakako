@@ -479,7 +479,7 @@ div.wpcf7-acceptance-missing {
   input[type="email"].wpcf7-form-control,
   input[type="tel"].wpcf7-form-control,
   textarea.wpcf7-form-control {
-    max-width: auto;
+    max-width: initial;
     width: 100%;
   }
 }
