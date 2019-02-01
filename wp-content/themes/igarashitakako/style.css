@@ -351,7 +351,6 @@ ul.grid-category li {
   border: 1px solid #000000;
   outline: 0;
   padding: 3px 5px;
-  width: 300px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -363,6 +362,13 @@ ul.grid-category li {
   -moz-border-radius: 0px;
   -o-border-radius: 0px;
   -ms-border-radius: 0px;
+}
+
+input[type="text"].wpcf7-form-control,
+input[type="email"].wpcf7-form-control,
+input[type="tel"].wpcf7-form-control,
+textarea.wpcf7-form-control {
+  width: 300px;
 }
 
 .wpcf7-form-control:hover,
