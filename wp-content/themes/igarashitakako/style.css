@@ -216,6 +216,10 @@ header {
   padding: 0 27px;
 }
 
+.container.thin-container {
+  max-width: 900px;
+}
+
 a.grid {
   display: block;
   float: left;
@@ -310,10 +314,6 @@ ul.grid-category li {
 }
 
 /* single */
-
-#single .container {
-  max-width: 900px;
-}
 
 .single-title {
   margin: 0;

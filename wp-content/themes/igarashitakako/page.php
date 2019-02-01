@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <div id="page">
-    <div class="container">
+    <div class="container thin-container">
       <?php while(have_posts()): the_post(); ?>
         <section>
           <div class="page-content">
