@@ -349,11 +349,7 @@ ul.grid-category li {
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  -webkit-box-shadow: inset 0px 0px 0px rgba(0,0,0,0);
-  -moz-box-shadow: inset 0px 0px 0px rgba(0,0,0,0);
-  -ms-box-shadow: inset 0px 0px 0px rgba(0,0,0,0);
-  -o-box-shadow: inset 0px 0px 0px rgba(0,0,0,0);
-  box-shadow: inset 0px 0px 0px rgba(0,0,0,0);
+  -webkit-appearance: none;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -483,6 +479,7 @@ div.wpcf7-acceptance-missing {
   input[type="email"].wpcf7-form-control,
   input[type="tel"].wpcf7-form-control,
   textarea.wpcf7-form-control {
+    max-width: auto;
     width: 100%;
   }
 }
