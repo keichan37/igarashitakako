@@ -1,37 +1,35 @@
-  <?php get_header(); ?>
-    <div id="summary" class="category">
-      <div class="summary-cover scroll-cover">
-        <div class="container">
-          <h1>
-            <?php if(is_category(recruit)): ?>
-              <span class="icon icon-user"></span>
-            <?php elseif(is_category(column)): ?>
-              <span class="icon icon-paper"></span>
-            <?php elseif(is_category(event)): ?>
-              <span class="icon icon-calendar"></span>
-            <?php elseif(is_category(interview)): ?>
-              <span class="icon icon-chat"></span>
-            <?php elseif(is_category(media)): ?>
-              <span class="icon icon-browser"></span>
-            <?php else: ?>
-              <span class="icon icon-folder"></span>
-            <?php endif; ?>
-            <?php single_cat_title(); ?></h1>
-          <?php echo category_description(); ?>
-          <i>全<?php echo $wp_query->found_posts; ?>件</i>
-        </div>
-      </div>
-      <div class="container">
-        <div class="summary-grid-wrap">
-          <?php if(have_posts()): while(have_posts()):the_post(); ?>
-            <?php get_template_part('partials/summary-grid'); ?>
-          <?php endwhile; endif; ?>
-        </div>
-        <?php if (function_exists("pagination")) {
-          pagination($custom_query->max_num_pages);
-        } ?>
-      </div>
-    </div>    
-      
-  </div>    
-  <?php get_footer(); ?>
+<?php get_header(); ?>
+  <div id="top">
+    <div class="container">
+      <?php while (have_posts()) : the_post(); ?>
+        <?php
+          $thumbnail_id = get_post_thumbnail_id();
+          $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
+        ?>
+        <a class="grid" href="<?php the_permalink(); ?>">
+          <?php if (has_post_thumbnail()): ?>
+            <img class="grid-eyecatch" src="<?php echo $thumbnail_url[0]; ?>" />
+          <?php else: ?>
+            <img class="grid-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/sample.jpg" />
+          <?php endif; ?>
+
+          <h5 class="grid-title"><?php the_title(); ?></h5>
+          <ul class="grid-category">
+            <?php
+              $cats = get_the_category();
+              foreach($cats as $cat):
+              if($cat->parent) echo '<li class="class_' . $cat->slug . '">' . $cat->cat_name . '</li>';
+              endforeach;
+            ?>
+          </ul>
+        </a>
+
+        <?php endwhile; ?>
+        <div class="clearfix"></div>
+      <?php wp_reset_query();?>
+    </div>
+    
+  </div>
+  <div class="footer"> 
+    <?php get_footer(); ?>
+  </div>
