@@ -10,7 +10,6 @@
     <meta content="index, follow" name="robots">
     <meta content="width=device-width, initial-scale=1" id="viewport" name="viewport">
 
-    <title><?php bloginfo('name'); ?></title>
     <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
     <meta content="<?php bloginfo('name'); ?>" property="og:title">
     <meta content="website" property="og:type">
