@@ -19,10 +19,10 @@
     <meta name="description" content="<?php bloginfo('description'); ?>" />
     <meta property="og:description" content="<?php bloginfo('description'); ?>" />
 
-    <?php if ( is_home() || is_front_page() ) : ?>
+    <?php if ( is_front_page() ) : ?>
       <title><?php bloginfo('name'); ?></title>
     <?php else: ?>
-      <title><?php wp_title( '', true, '' ); ?></title>
+      <title><?php bloginfo('name'); ?> | <?php wp_title( '', true, '' ); ?></title>
       <meta content="article" property="og:type" />
     <?php endif; ?>
     

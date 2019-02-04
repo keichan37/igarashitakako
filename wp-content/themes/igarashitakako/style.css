@@ -117,6 +117,14 @@ textarea {
 }
 
 /* original */
+
+::selection{
+background: rgba(212,217,236,.99);
+}
+::-moz-selection{
+background: rgba(221,217,236,.99);
+}
+
 body,
 html {
   font-family: 'FOT-筑紫ゴシック Pr5 M', 'TsukuGoPr5-M', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
@@ -289,6 +297,28 @@ ul.grid-category li {
   padding: 40px 30px 15px 30px;
   margin: 0px auto;
   margin-top: auto;
+  position: relative;
+}
+
+#footer small {
+  display: block;
+  margin-top: 10px;
+}
+
+.scroll-top {
+  position: absolute;
+  font-size: 20px;
+  right: 0;
+  top: 0;
+  margin: 35px 35px 0 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.scroll-top:hover {
+  margin-top: 34px;
 }
 
 /* page */

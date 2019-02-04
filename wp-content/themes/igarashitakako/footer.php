@@ -1,4 +1,7 @@
     <footer id="footer">
+      <?php wp_nav_menu( array('menu' => 'global_menu', 'menu_class' => 'global_menu')); ?>
+      <a class="scroll-top" href="javascript: void(0);"><span class="icon icon-topArrow"></a></a>
+      <div class="clearfix"></div>
       <small>このWeb siteに掲載されている画像や情報は、弊社の仕事紹介を目的としています。画像掲載に関して、不都合がございましたら削除・変更いたしますのでお手数ですがご連絡をいただきますようよろしくお願いいたします。</small>
     </footer>
   </div>
