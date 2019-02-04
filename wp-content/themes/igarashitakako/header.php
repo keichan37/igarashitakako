@@ -18,11 +18,21 @@
     <meta name="twitter:description" content="<?php bloginfo('description'); ?>">
     <meta name="description" content="<?php bloginfo('description'); ?>" />
     <meta property="og:description" content="<?php bloginfo('description'); ?>" />
+
+    <?php if ( is_home() || is_front_page() ) : ?>
+      <title><?php bloginfo('name'); ?></title>
+    <?php else: ?>
+      <title><?php wp_title( '', true, '' ); ?></title>
+      <meta content="article" property="og:type" />
+    <?php endif; ?>
     
-    <meta name="keywords" content="五十嵐貴子,グラフィックデザイナー,劇場用プログラム" />
+    <?php if ( $post->keywords ): ?>
+      <meta name="keywords" content="<?php echo esc_attr( $post->keywords ); ?>" />
+    <?php else: ?>
+      <meta name="keywords" content="五十嵐貴子,グラフィックデザイナー,劇場用プログラム" />
+    <?php endif; ?>
 
     <meta content="igarashitakako" property="og:site_name">
-
     <meta content="<?php echo get_template_directory_uri(); ?>/OGP.jpg" property="og:image">
     <meta name="twitter:image:src" content="<?php echo get_template_directory_uri(); ?>/OGP.jpg">
     <meta content="ja_JP" property="og:locale">
