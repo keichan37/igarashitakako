@@ -1,6 +1,6 @@
         <?php
           $thumbnail_id = get_post_thumbnail_id();
-          $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
+          $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'large', true);
         ?>
         <a class="grid" href="<?php the_permalink(); ?>">
           <?php if (has_post_thumbnail()): ?>

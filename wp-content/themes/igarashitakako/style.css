@@ -355,6 +355,15 @@ ul.grid-category li {
   text-align: right;
 }
 
+#gallery-1 img {
+  border: none;
+}
+
+img.aligncenter {
+  display: block;
+  margin: 0px auto;
+}
+
 .prev-link,
 .next-link {
   margin-top: 15px;
