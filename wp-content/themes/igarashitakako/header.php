@@ -22,11 +22,11 @@
 
     <?php if ( is_front_page() ) : ?>
       <title><?php bloginfo('name'); ?></title>
-      <meta name="keywords" content="五十嵐貴子,グラフィックデザイナー,劇場用プログラム" />
+      <meta name="keywords" content="五十嵐貴子,映画宣伝,デザイン,デザイナー,グラフィックデザイナー,劇場用プログラム,ポスター,フライヤー" />
     <?php else: ?>
       <title><?php bloginfo('name'); ?> | <?php wp_title( '', true, '' ); ?></title>
       <meta content="article" property="og:type" />
-      <meta name="keywords" content="五十嵐貴子,<?php wp_title( '', true, '' ); ?>" />
+      <meta name="keywords" content="五十嵐貴子,映画宣伝,デザイン,デザイナー,グラフィックデザイナー,劇場用プログラム,ポスター,フライヤー,<?php wp_title( '', true, '' ); ?>" />
     <?php endif; ?>
     
     <meta content="igarashitakako" property="og:site_name">
@@ -42,12 +42,19 @@
     
     <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&delay=1&aa=1&ab=2"" charset="utf-8"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133964076-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133964076-1');
+    </script>
+
     <?php wp_head(); ?>
   </head>
   <body <?php body_class( $class ); ?>>
-    <?php /* ?>
-      <?php include_once("analyticstracking.php") ?>
-    <?php */ ?>
     <div id="wrap">
       <header>
         <a href="/" id="brand"><?php get_template_part('partials/brand'); ?></a>
